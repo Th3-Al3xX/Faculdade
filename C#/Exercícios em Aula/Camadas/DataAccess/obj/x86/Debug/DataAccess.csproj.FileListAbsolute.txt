@@ -1,0 +1,7 @@
+D:\Downloads\Camadas\Camadas\DataAccess\bin\x86\Debug\DataAccess.dll
+D:\Downloads\Camadas\Camadas\DataAccess\bin\x86\Debug\DataAccess.pdb
+D:\Downloads\Camadas\Camadas\DataAccess\bin\x86\Debug\Util.dll
+D:\Downloads\Camadas\Camadas\DataAccess\bin\x86\Debug\Util.pdb
+D:\Downloads\Camadas\Camadas\DataAccess\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Downloads\Camadas\Camadas\DataAccess\obj\x86\Debug\DataAccess.dll
+D:\Downloads\Camadas\Camadas\DataAccess\obj\x86\Debug\DataAccess.pdb

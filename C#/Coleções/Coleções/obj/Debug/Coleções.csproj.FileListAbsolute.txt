@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\Coleá‰es\Coleá‰es\bin\Debug\Coleções.exe
+C:\Users\Administrator\Desktop\Coleá‰es\Coleá‰es\bin\Debug\Coleções.pdb
+C:\Users\Administrator\Desktop\Coleá‰es\Coleá‰es\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Coleá‰es\Coleá‰es\obj\Debug\Coleções.frmHashTable.resources
+C:\Users\Administrator\Desktop\Coleá‰es\Coleá‰es\obj\Debug\Coleções.frmSortedList.resources
+C:\Users\Administrator\Desktop\Coleá‰es\Coleá‰es\obj\Debug\Coleções.frmStack.resources
+C:\Users\Administrator\Desktop\Coleá‰es\Coleá‰es\obj\Debug\Coleções.frmQueue.resources
+C:\Users\Administrator\Desktop\Coleá‰es\Coleá‰es\obj\Debug\Coleções.frmPrincipal.resources
+C:\Users\Administrator\Desktop\Coleá‰es\Coleá‰es\obj\Debug\Coleções.frmArrayList.resources
+C:\Users\Administrator\Desktop\Coleá‰es\Coleá‰es\obj\Debug\Coleções.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Coleá‰es\Coleá‰es\obj\Debug\Coleções.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\Coleá‰es\Coleá‰es\obj\Debug\Coleções.exe
+C:\Users\Administrator\Desktop\Coleá‰es\Coleá‰es\obj\Debug\Coleções.pdb
+C:\Users\Administrator\Desktop\Coleá‰es\Coleá‰es\obj\Debug\Coleções.frmExemplo.resources

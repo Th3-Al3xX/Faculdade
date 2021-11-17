@@ -1,0 +1,9 @@
+D:\Downloads\Camadas\Camadas\BussinessRules\bin\x86\Debug\BussinessRules.dll
+D:\Downloads\Camadas\Camadas\BussinessRules\bin\x86\Debug\BussinessRules.pdb
+D:\Downloads\Camadas\Camadas\BussinessRules\bin\x86\Debug\DataAccess.dll
+D:\Downloads\Camadas\Camadas\BussinessRules\bin\x86\Debug\Util.dll
+D:\Downloads\Camadas\Camadas\BussinessRules\bin\x86\Debug\DataAccess.pdb
+D:\Downloads\Camadas\Camadas\BussinessRules\bin\x86\Debug\Util.pdb
+D:\Downloads\Camadas\Camadas\BussinessRules\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Downloads\Camadas\Camadas\BussinessRules\obj\x86\Debug\BussinessRules.dll
+D:\Downloads\Camadas\Camadas\BussinessRules\obj\x86\Debug\BussinessRules.pdb

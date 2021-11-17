@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9EF37EF0-EC6D-4AC5-B663-50523E231999}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lista_01_02</RootNamespace>
+    <AssemblyName>Lista_01_02</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista 01\frmL01E08.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista 01\frmL01E08.Designer.cs">
+      <DependentUpon>frmL01E08.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista 01\frmL01E01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista 01\frmL01E01.designer.cs">
+      <DependentUpon>frmL01E01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista 01\frmL01E02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista 01\frmL01E02.designer.cs">
+      <DependentUpon>frmL01E02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista 01\frmL01E03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista 01\frmL01E03.designer.cs">
+      <DependentUpon>frmL01E03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista 01\frmL01E04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista 01\frmL01E04.designer.cs">
+      <DependentUpon>frmL01E04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista 01\frmL01E05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista 01\frmL01E05.designer.cs">
+      <DependentUpon>frmL01E05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista 01\frmL01E06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista 01\frmL01E06.designer.cs">
+      <DependentUpon>frmL01E06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista 01\frmL01E07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista 01\frmL01E07.Designer.cs">
+      <DependentUpon>frmL01E07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista 01\Pessoa.cs" />
+    <Compile Include="Lista 02\frmL02E01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista 02\frmL02E01.designer.cs">
+      <DependentUpon>frmL02E01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista 02\frmL02E02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista 02\frmL02E02.designer.cs">
+      <DependentUpon>frmL02E02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista 02\frmL02E03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista 02\frmL02E03.designer.cs">
+      <DependentUpon>frmL02E03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista 02\frmL02E04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista 02\frmL02E04.designer.cs">
+      <DependentUpon>frmL02E04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista 02\frmL02E05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista 02\frmL02E05.designer.cs">
+      <DependentUpon>frmL02E05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista 01\frmL01E08.resx">
+      <DependentUpon>frmL01E08.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista 01\frmL01E01.resx">
+      <DependentUpon>frmL01E01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista 01\frmL01E02.resx">
+      <DependentUpon>frmL01E02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista 01\frmL01E03.resx">
+      <DependentUpon>frmL01E03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista 01\frmL01E04.resx">
+      <DependentUpon>frmL01E04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista 01\frmL01E05.resx">
+      <DependentUpon>frmL01E05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista 01\frmL01E06.resx">
+      <DependentUpon>frmL01E06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista 01\frmL01E07.resx">
+      <DependentUpon>frmL01E07.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista 02\frmL02E01.resx">
+      <DependentUpon>frmL02E01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista 02\frmL02E02.resx">
+      <DependentUpon>frmL02E02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista 02\frmL02E03.resx">
+      <DependentUpon>frmL02E03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista 02\frmL02E04.resx">
+      <DependentUpon>frmL02E04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista 02\frmL02E05.resx">
+      <DependentUpon>frmL02E05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

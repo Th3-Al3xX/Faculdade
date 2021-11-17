@@ -1,0 +1,346 @@
+/*
+ ============================================================================
+ Name        : Teste_C.c
+ Author      : Luciano
+ Version     :
+ Copyright   :
+ Description : Folha de Pagamento
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+	// Estrutura que representa um funcionario
+	struct Funcionario{
+		int id;
+		char nome[50];
+		float salario;
+		char ativo;
+	};
+
+	// Indica ordem na qual os funcionarios foram cadastrados
+	int func_sequence = 1;
+
+	// Constante - Quantidade de Funcionario da Folha de Pagamento
+	int LISTA_SIZE = 10;
+
+	// Indice usado nas estruturas de repeticao
+	int indice;
+
+	// Funcionalidade que o usuario escolheu
+	int pagina = 0;
+
+	// Variavel para guardar a resposta do usuario
+	char sim_nao;
+
+	// Variavel flag que indica se todas as posicoes estao em uso
+	char lista_lotada;
+
+	// Declaracao da Folha de Pagamento
+	struct Funcionario folha_pagamento[10];
+
+	// Uma Folha de Pagamento auxiliar usada na reordenacao
+	struct Funcionario folha_pagamentoTemp[10];
+
+	// Indice usado no loop ?????????????????
+	int indiceTemp;
+	// Variavel para guardar o funcionario sendo criado/editado
+	struct Funcionario funcTemp;
+
+
+	int cadastrar(){
+
+		int retorno = 0;
+
+		printf("*** Cadastrar ***\n");
+
+			funcTemp.id = func_sequence;
+			funcTemp.ativo = '1';
+
+			int existe = 0;
+
+			do{
+				printf("\nDigite o Nome:");
+				gets(funcTemp.nome);
+
+
+				for (indice = 0; indice < LISTA_SIZE; indice++) {
+
+					existe = 1;
+
+					if(strcmp(funcTemp.nome, folha_pagamento[indice].nome) == 0 ){
+						printf("Ja existe um funcionario com essse nome!");
+						existe = 0;
+						break;
+					}
+
+				}
+			}while(existe == 0);
+
+
+			printf("\nDigite o Salario:");
+			scanf("%f",&funcTemp.salario);
+			fflush(stdin);
+
+			for (indice = 0; indice < LISTA_SIZE; indice++) {
+
+				lista_lotada = '0';
+				if(folha_pagamento[indice].ativo == '0' ){
+					folha_pagamento[indice] = funcTemp;
+					func_sequence++;
+					break;
+				}
+				if(indice == LISTA_SIZE){
+					printf("Lista Lotada!!");
+					system("pause");
+					lista_lotada = '1';
+
+				}
+
+			}
+			if(lista_lotada == '0'){
+
+				printf(" \n\n");
+				printf("Deseja cadastrar outro funcionario (S ou N)?");
+				scanf("%c",&sim_nao);
+				fflush(stdin);
+
+				if(sim_nao == 's' || sim_nao == 'S'){
+					retorno = 1; //Pagina
+				} else{
+					retorno = 4; //Pagina
+				}
+			}else{
+				retorno = 5; //Pagina
+			}
+
+
+		return retorno;
+
+	}
+
+	int main(void) {
+
+
+	// Inicializacao da Folha de Pagamento
+	for (indice = 0; indice < LISTA_SIZE; indice++){
+			folha_pagamento[indice].ativo = '0';
+		}
+
+
+	// Loop que renderiza o menu inicial e controla a exibição das paginas
+	do{
+
+		//Limpa o buffer do teclado
+		fflush(stdin);
+		switch (pagina) {
+			case 1:
+
+				pagina = cadastrar();
+				break;
+
+			case 2:
+				printf("*** Alterar ***\n");
+				printf(" \n");
+				pagina = 0;
+
+				break;
+			case 3:
+				printf("*** Pesquisas ***\n");
+				int tipo_pesquisa = 0;
+				printf("\n 1 - Busca Por Nome");
+				printf("\n 2 - Busca Por Salario");
+				printf("\n 3 - Sair\n");
+
+				printf("\n Escolha o tipo de pesquisa: ");
+				scanf("%d",&tipo_pesquisa);
+				fflush(stdin);
+
+				if(tipo_pesquisa == 1){
+					char nome[50];
+
+					do{
+						printf("\n Informe o nome que deseja pesquisar:");
+						gets(nome);
+
+						for (indice = 0; indice < LISTA_SIZE; indice++) {
+
+							if(strcmp(nome, folha_pagamento[indice].nome) == 0 ){
+								printf(" Nome: %s \n",folha_pagamento[indice].nome);
+								printf(" Salario: %f ",folha_pagamento[indice].salario);
+								break;
+							}
+							if(indice == LISTA_SIZE-1){
+								printf("Funcionario nao cadastrado!");
+							}
+						}
+						printf("\n\n");
+
+						printf("\nDeseja realizar nova pesquisa?");
+						scanf("%c",&sim_nao);
+						fflush(stdin);
+
+					}while(sim_nao == 's' || sim_nao == 'S');
+
+					printf("\n\n");
+
+				} else if(tipo_pesquisa == 2){
+					printf("\n Pesquisa por salario\n");
+					system("pause");
+
+				} else if(tipo_pesquisa == 3){
+					pagina = 0;
+				}
+
+
+				printf(" \n");
+				system("pause");
+
+				break;
+			case 4:
+				printf("*** Listar Todos Funcionarios ***\n\n");
+				for (indice = 0; indice < LISTA_SIZE; indice++) {
+					struct Funcionario temp = folha_pagamento[indice];
+					if(temp.ativo == '1'){
+						printf(" Codigo: %d ",temp.id);
+						printf(" Ativo: %c ",temp.ativo);
+						printf(" Ordem: %d ",indice);
+						printf(" Nome: %s \n",temp.nome);
+						printf(" Salario: %f ",temp.salario);
+						printf(" \n\n");
+					}
+				}
+
+				pagina = 0;
+				system("pause");
+
+				break;
+			case 5:
+				printf("*** Excluir Funcionario***\n");
+
+				for (indice = 0; indice < LISTA_SIZE; indice++) {
+					funcTemp = folha_pagamento[indice];
+					if(funcTemp.ativo == '1'){
+						printf(" Codigo: %d ",funcTemp.id);
+						printf(" Ativo: %c ",funcTemp.ativo);
+						printf(" Nome: %s \n",funcTemp.nome);
+						printf(" Salario: %f ",funcTemp.salario);
+						printf(" \n\n");
+					}
+				}
+
+				printf("Digite o id do funcionario que deseja excluir:");
+				scanf("%d",&funcTemp.id);
+				fflush(stdin);
+
+				printf("\nDeseja realmente excluir o funcionario de ID: %d?", funcTemp.id);
+				scanf("%c",&sim_nao);
+				fflush(stdin);
+
+				if(sim_nao == 's' || sim_nao == 'S'){
+					funcTemp.ativo='0';
+
+					for (indice = 0; indice < LISTA_SIZE; indice++) {
+						if(funcTemp.id == folha_pagamento[indice].id ){
+							folha_pagamento[indice] = funcTemp;
+						}
+					}
+				}
+
+				printf(" \n\n");
+				printf("Deseja excluir outro funcionario (S ou N)?");
+				scanf("%c",&sim_nao);
+				fflush(stdin);
+
+				if(sim_nao == 's'){
+					pagina = 5;
+				} else if(sim_nao == 'S'){
+					pagina = 5;
+				} else{
+
+					// Reordena a listagem
+					for (indice = 0, indiceTemp = 0; indice < LISTA_SIZE; indice++){
+						funcTemp = folha_pagamento[indice];
+						if(funcTemp.ativo == '1'){
+							folha_pagamentoTemp[indiceTemp] = funcTemp;
+							indiceTemp++;
+						}else{
+							folha_pagamentoTemp[indice].id = 0;
+							strcpy(folha_pagamentoTemp[indice].nome,"\n");
+							folha_pagamentoTemp[indice].salario = 0;
+							folha_pagamentoTemp[indice].ativo = '0';
+						}
+					}
+
+					// Substitui a listagem velha pela reordenada
+					for (indice = 0; indice < LISTA_SIZE; indice++){
+						folha_pagamento[indice] = folha_pagamentoTemp[indice];
+					}
+					pagina = 4;
+					system("pause");
+				}
+				break;
+			case 6:
+				printf("*** Excluir Todos ***\n");
+
+				for (indice = 0; indice < LISTA_SIZE; indice++) {
+					funcTemp = folha_pagamento[indice];
+					if(funcTemp.ativo == '1'){
+						printf(" Codigo: %d ",funcTemp.id);
+						printf(" Ativo: %c ",funcTemp.ativo);
+						printf(" Nome: %s \n",funcTemp.nome);
+						printf(" Salario: %f ",funcTemp.salario);
+						printf(" \n\n");
+					}
+				}
+
+				printf("Deseja realmente excluir todos os funcionarios?");
+				scanf("%c",&sim_nao);
+				fflush(stdin);
+
+				if(sim_nao == 's' || sim_nao == 'S'){
+					for (indice = 0; indice < LISTA_SIZE; indice++){
+						folha_pagamento[indice].id = 0;
+						strcpy(folha_pagamento[indice].nome,"\n");
+						folha_pagamento[indice].salario = 0;
+						folha_pagamento[indice].ativo = '0';
+					}
+					printf("*** Excluir Todos ***\n");
+					printf("\n");
+					printf("\n");
+					printf("Todos os funcionarios foram excluidos!");
+					printf("\n");
+
+				}
+
+				system("pause");
+				pagina = 0;
+
+				break;
+			case 0:
+				printf("\n\n\t\t\t*** Folha de Pagamento ***\n\n\n");
+				printf("\t1 - Cadastrar\n");
+				printf("\t2 - Alterar\n");
+				printf("\t3 - Pesquisar\n");
+				printf("\t4 - Listar Todos\n");
+				printf("\t5 - Excluir\n");
+				printf("\t6 - Excluir Todos\n");
+				printf("\t7 - Sair\n");
+				printf("\n");
+				printf("\tDigite sua opcao:");
+				scanf("%d",&pagina);
+				break;
+			default :
+				pagina = 0;
+				break;
+		}
+
+		system("cls");
+
+	}while(pagina != 7);
+
+	return EXIT_SUCCESS;
+
+}

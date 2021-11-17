@@ -1,0 +1,17 @@
+J:\Projects\Cadastro\Cadastro\bin\Debug\Cadastro.exe
+J:\Projects\Cadastro\Cadastro\bin\Debug\Cadastro.pdb
+J:\Projects\Cadastro\Cadastro\obj\Debug\ResolveAssemblyReference.cache
+J:\Projects\Cadastro\Cadastro\obj\Debug\Cadastro.Form1.resources
+J:\Projects\Cadastro\Cadastro\obj\Debug\Cadastro.Properties.Resources.resources
+J:\Projects\Cadastro\Cadastro\obj\Debug\Cadastro.csproj.GenerateResource.Cache
+J:\Projects\Cadastro\Cadastro\obj\Debug\Cadastro.exe
+J:\Projects\Cadastro\Cadastro\obj\Debug\Cadastro.pdb
+C:\Users\Alex\Downloads\Pendrive\Projects\Cadastro\Cadastro\obj\Debug\Cadastro.exe
+C:\Users\Alex\Downloads\Pendrive\Projects\Cadastro\Cadastro\obj\Debug\Cadastro.pdb
+C:\Users\Alex\Downloads\Pendrive\Projects\Cadastro\Cadastro\bin\Debug\Cadastro.exe
+C:\Users\Alex\Downloads\Pendrive\Projects\Cadastro\Cadastro\bin\Debug\Cadastro.pdb
+C:\Users\Alex\Downloads\Pendrive\Projects\Cadastro\Cadastro\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Alex\Downloads\Pendrive\Projects\Cadastro\Cadastro\obj\Debug\Cadastro.Form1.resources
+C:\Users\Alex\Downloads\Pendrive\Projects\Cadastro\Cadastro\obj\Debug\Cadastro.Properties.Resources.resources
+C:\Users\Alex\Downloads\Pendrive\Projects\Cadastro\Cadastro\obj\Debug\ResGen.read.1.tlog
+C:\Users\Alex\Downloads\Pendrive\Projects\Cadastro\Cadastro\obj\Debug\ResGen.write.1.tlog

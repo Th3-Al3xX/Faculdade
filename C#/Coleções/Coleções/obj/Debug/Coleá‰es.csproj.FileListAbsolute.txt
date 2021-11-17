@@ -1,0 +1,13 @@
+C:\Users\Emerson\Desktop\POO\Coleções\Coleções\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Emerson\Desktop\POO\Coleções\Coleções\obj\Debug\Coleções.frmSortedList.resources
+C:\Users\Emerson\Desktop\POO\Coleções\Coleções\obj\Debug\Coleções.frmHashTable.resources
+C:\Users\Emerson\Desktop\POO\Coleções\Coleções\obj\Debug\Coleções.frmStack.resources
+C:\Users\Emerson\Desktop\POO\Coleções\Coleções\obj\Debug\Coleções.frmQueue.resources
+C:\Users\Emerson\Desktop\POO\Coleções\Coleções\obj\Debug\Coleções.frmPrincipal.resources
+C:\Users\Emerson\Desktop\POO\Coleções\Coleções\obj\Debug\Coleções.frmArrayList.resources
+C:\Users\Emerson\Desktop\POO\Coleções\Coleções\obj\Debug\Coleções.Properties.Resources.resources
+C:\Users\Emerson\Desktop\POO\Coleções\Coleções\obj\Debug\Coleções.csproj.GenerateResource.Cache
+C:\Users\Emerson\Desktop\POO\Coleções\Coleções\bin\Debug\Coleções.exe
+C:\Users\Emerson\Desktop\POO\Coleções\Coleções\bin\Debug\Coleções.pdb
+C:\Users\Emerson\Desktop\POO\Coleções\Coleções\obj\Debug\Coleções.exe
+C:\Users\Emerson\Desktop\POO\Coleções\Coleções\obj\Debug\Coleções.pdb

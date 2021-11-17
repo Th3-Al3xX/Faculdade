@@ -1,0 +1,18 @@
+FUNCIONARIO
+- codigo:INT
+- nome:STRING
+- endereco: ENDERECO
+
++ codigo: int
++ funcionario
++ nome: STRING
++ end: ENDERECO
+
+
+
+ENDERECO
+- rua: STRING
+- numero: INT
+
++ rua: STRING
++ numero: INT

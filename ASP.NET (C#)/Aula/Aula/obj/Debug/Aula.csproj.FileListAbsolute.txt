@@ -1,0 +1,5 @@
+D:\Visual Studio 2008\Projects\Aula\Aula\bin\Aula.dll
+D:\Visual Studio 2008\Projects\Aula\Aula\bin\Aula.pdb
+D:\Visual Studio 2008\Projects\Aula\Aula\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio 2008\Projects\Aula\Aula\obj\Debug\Aula.dll
+D:\Visual Studio 2008\Projects\Aula\Aula\obj\Debug\Aula.pdb

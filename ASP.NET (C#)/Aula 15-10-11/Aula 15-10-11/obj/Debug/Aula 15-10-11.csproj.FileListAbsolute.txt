@@ -1,0 +1,5 @@
+D:\Visual Studio 2008\Projects\Aula 15-10-11\Aula 15-10-11\bin\Aula 15-10-11.dll
+D:\Visual Studio 2008\Projects\Aula 15-10-11\Aula 15-10-11\bin\Aula 15-10-11.pdb
+D:\Visual Studio 2008\Projects\Aula 15-10-11\Aula 15-10-11\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio 2008\Projects\Aula 15-10-11\Aula 15-10-11\obj\Debug\Aula 15-10-11.dll
+D:\Visual Studio 2008\Projects\Aula 15-10-11\Aula 15-10-11\obj\Debug\Aula 15-10-11.pdb

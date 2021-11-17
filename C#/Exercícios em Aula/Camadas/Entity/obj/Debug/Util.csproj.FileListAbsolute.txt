@@ -1,0 +1,5 @@
+D:\Downloads\Camadas\Camadas\Entity\bin\Debug\Util.dll
+D:\Downloads\Camadas\Camadas\Entity\bin\Debug\Util.pdb
+D:\Downloads\Camadas\Camadas\Entity\obj\Debug\ResolveAssemblyReference.cache
+D:\Downloads\Camadas\Camadas\Entity\obj\Debug\Util.dll
+D:\Downloads\Camadas\Camadas\Entity\obj\Debug\Util.pdb
